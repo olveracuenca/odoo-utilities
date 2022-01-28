@@ -1,0 +1,10 @@
+export BASE_IMAGE="vauxoo/odoo-150-image"
+export PSQL_VERSION="11"
+export VERSION="15.0"
+export ODOO_REPO="jarsa/odoo"
+export ODOO_BRANCH="15.0"
+export TRAVIS_PYTHON_VERSION="3.8"
+export TRAVIS_REPO_SLUG="Jarsa/"
+export COUNTRY="MX"
+export COVERAGE_MIN=10
+export COVERAGE_PRECISION=2

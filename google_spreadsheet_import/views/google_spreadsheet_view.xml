@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="google_spreadsheet_form">
+        <field name="name">google_spreadsheet.form</field>
+        <field name="model">google.spreadsheet</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="upload" string="Upload" type="object" class="btn-primary"/>
+                    <button name="clean_log" string="Clean Log" type="object"/>
+                    <button name="action_open_native_import" string="Native Importation" type="object"/>
+                    <button name="open_file" string="Open File" type="object"/>
+                    <button name="activate_background_import" string="Import in Background" confirm="Are you sure to set import in the background? The import will start automatically." type="object" attrs="{'invisible': [('background_import', '=', True)]}"/>
+                    <button name="deactivate_background_import" string="Deactivate Import in Background" type="object" attrs="{'invisible': [('background_import', '=', False)]}"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="model_id" options="{'no_create_edit': 1, 'no_open': 1, 'no_create': 1, 'no_edit': 1}" groups="google_spreadsheet_import.group_google_spreadsheet_import_manager"/>
+                            <field name="file_id" groups="google_spreadsheet_import.group_google_spreadsheet_import_manager"/>
+                            <field name="sheet_id" domain="[('file_id', '=', file_id)]" options="{'no_create_edit': 1, 'no_open': 1, 'no_create': 1, 'no_edit': 1}" groups="google_spreadsheet_import.group_google_spreadsheet_import_manager"/>
+                        </group>
+                        <group>
+                            <field name="active" groups="google_spreadsheet_import.group_google_spreadsheet_import_manager"/>
+                            <field name="model"/>
+                            <field name="import_type"/>
+                            <field name="sequence"/>
+                            <field name="background_import" groups="base.group_no_one"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Errors">
+                            <field name="error_ids" nolabel="1">
+                                <tree>
+                                    <field name="field"/>
+                                    <field name="field_name"/>
+                                    <field name="type"/>
+                                    <field name="record"/>
+                                    <field name="row_from"/>
+                                    <field name="row_to"/>
+                                    <field name="message"/>
+                                    <field name="value"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="Advanced" groups="google_spreadsheet_import.group_google_spreadsheet_import_manager">
+                            <group>
+                                <group string="Filter options">
+                                    <field name="sheet_range"/>
+                                    <field name="query"/>
+                                    <field name="batch_size"/>
+                                </group>
+                                <group string="Format options">
+                                    <field name="date_format"/>
+                                    <field name="datetime_format"/>
+                                    <field name="separator"/>
+                                    <field name="quoting"/>
+                                    <field name="float_decimal_separator"/>
+                                    <field name="float_thousand_separator"/>
+                                    <field name="encoding"/>
+                                    <field name="context"/>
+                                    <field name="fix_header"/>
+                                    <field name="header_value" attrs="{'invisible': [('fix_header', '=', False)]}"/>
+                                </group>
+                            </group>
+                        </page>
+                        <page string="Security Groups" groups="google_spreadsheet_import.group_google_spreadsheet_import_manager">
+                            <field name="group_ids" nolabel="1"/>
+                        </page>
+                        <page string="Users" groups="google_spreadsheet_import.group_google_spreadsheet_import_manager">
+                            <field name="user_ids" nolabel="1"/>
+                        </page>
+
+                        <page string="Python Code" name='code' attrs="{'invisible': [('import_type', '!=', 'code')]}" groups="google_spreadsheet_import.group_google_spreadsheet_import_manager">
+                            <field name="code" widget="ace" options="{'mode': 'python'}" placeholder="Enter Python code here. Help about Python expression is available in the help tab of this document."/>
+                        </page>
+                        <page string="Help" attrs="{'invisible': [('import_type', '!=', 'code')]}" groups="google_spreadsheet_import.group_google_spreadsheet_import_manager">
+                            <group>
+                                <div style="margin-top: 4px;">
+                                    <h3>Help with Python expressions</h3>
+                                    <p>Various fields may use Python code or Python expressions. The following variables can be used:</p>
+                                    <ul>
+                                        <li><code>env</code>: Odoo Environment on which the action is triggered</li>
+                                        <li><code>model</code>: Odoo Model of the record on which the action is triggered; is a void recordset</li>
+                                        <li><code>records</code>: recordset of all records on which the action is triggered in multi mode; may be void</li>
+                                        <li><code>time</code>, <code>datetime</code>, <code>dateutil</code>, <code>timezone</code>: useful Python libraries</li>
+                                        <li><code>log(message, level='info')</code>:logging function to record debug information in <code>ir.logging</code> table</li>
+                                        <li><code>Warning</code>: Warning Exception to use with <code>raise</code></li>
+                                        <li>To return an action, assign: <code>action = {...}</code></li>
+                                    </ul>
+                                    <div attrs="{'invisible': [('import_type', '!=', 'code')]}">
+                                        <p>Example of Python code</p>
+<code style='white-space: pre-wrap'>
+partner_name = record.name + '_code'
+env['res.partner'].create({'name': partner_name})
+</code>
+                                    </div>
+                                </div>
+                            </group>
+                        </page>
+                        <page string="Logs">
+                            <field name="log_ids" nolabel="1">
+                                <tree>
+                                    <field name="create_date"/>
+                                    <field name="create_uid"/>
+                                    <field name="name"/>
+                                    <field name="duration"/>
+                                    <field name="ids_related" invisible="1"/>
+                                    <button name="action_open_related_records" type="object" icon="fa-arrow-right" string="See Records" attrs="{'invisible': [('ids_related', '=', '')]}"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="Data" groups="base.group_no_one" attrs="{'invisible': [('data', '=', False)]}">
+                            <field name="data" widget="ace" options="{'mode': 'json'}"/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record model='ir.ui.view' id='google_spreadsheet_tree'>
+        <field name='name'>google_spreadsheet.tree</field>
+        <field name='model'>google.spreadsheet</field>
+        <field name='arch' type='xml'>
+            <tree>
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+                <field name="active"/>
+                <field name="model_id"/>
+                <field name="file_id"/>
+                <field name="sheet_id"/>
+            </tree>
+        </field>
+    </record>
+    <record id="google_spreadsheet_search" model="ir.ui.view">
+        <field name="name">google.spreadsheet.search</field>
+        <field name="model">google.spreadsheet</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="model_id"/>
+                <field name="file_id"/>
+                <field name="sheet_id"/>
+                <filter name="groupby_model_id" context="{'group_by': 'model_id'}" string="Model"/>
+                <filter name="groupby_file_id" context="{'group_by': 'file_id'}" string="File"/>
+                <filter name="groupby_sheet_id" context="{'group_by': 'sheet_id'}" string="Sheet"/>
+            </search>
+        </field>
+    </record>
+    <record id="action_google_spreadsheet" model="ir.actions.act_window">
+        <field name="name">Google Spreadsheet Import</field>
+        <field name="res_model">google.spreadsheet</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem id="google_drive_menu_root" name="Google Drive" sequence="70" groups="google_spreadsheet_import.group_google_spreadsheet_import_user" web_icon="google_spreadsheet_import,static/description/icon.png"/>
+    <menuitem name="Google Drive" id="google_drive_child_menu" parent="google_drive_menu_root"/>
+    <menuitem id="google_spreadsheet_menu" parent="google_drive_child_menu" action="action_google_spreadsheet"/>
+</odoo>

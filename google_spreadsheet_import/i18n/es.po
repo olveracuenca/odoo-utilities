@@ -1,0 +1,764 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* google_spreadsheet_import
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-25 21:07+0000\n"
+"PO-Revision-Date: 2022-01-26 08:13-0600\n"
+"Last-Translator: Jesús Alan Ramos Rodríguez <alan.ramos@jarsa.com.mx>\n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. module: google_spreadsheet_import
+#: model_terms:ir.ui.view,arch_db:google_spreadsheet_import.google_spreadsheet_form
+msgid ""
+"<code style=\"white-space: pre-wrap\">\n"
+"partner_name = record.name + '_code'\n"
+"env['res.partner'].create({'name': partner_name})\n"
+"</code>"
+msgstr ""
+"<code style=\"white-space: pre-wrap\">\n"
+"partner_name = record.name + '_code'\n"
+"env['res.partner'].create({'name': partner_name})\n"
+"</code>"
+
+#. module: google_spreadsheet_import
+#: model_terms:ir.ui.view,arch_db:google_spreadsheet_import.google_spreadsheet_form
+msgid "<code>Warning</code>: Warning Exception to use with <code>raise</code>"
+msgstr ""
+"<code>Warning</code>: Excepción de Advertencia para usar con <code>raise</"
+"code>"
+
+#. module: google_spreadsheet_import
+#: model_terms:ir.ui.view,arch_db:google_spreadsheet_import.google_spreadsheet_form
+msgid "<code>env</code>: Odoo Environment on which the action is triggered"
+msgstr "<code>env</code> : Entorno de Odoo en el que se activa la acción"
+
+#. module: google_spreadsheet_import
+#: model_terms:ir.ui.view,arch_db:google_spreadsheet_import.google_spreadsheet_form
+msgid ""
+"<code>log(message, level='info')</code>:logging function to record debug "
+"information in <code>ir.logging</code> table"
+msgstr ""
+"<code>log(message, level='info')</code> : función de registro para "
+"registrar información de depuración en la tabla <code>ir.logging</code>"
+
+#. module: google_spreadsheet_import
+#: model_terms:ir.ui.view,arch_db:google_spreadsheet_import.google_spreadsheet_form
+msgid ""
+"<code>model</code>: Odoo Model of the record on which the action is "
+"triggered; is a void recordset"
+msgstr ""
+"<code>model</code>: Modelo de Odoo del registro en el que la acción es "
+"realizada; es un conjunto de registros vacíos"
+
+#. module: google_spreadsheet_import
+#: model_terms:ir.ui.view,arch_db:google_spreadsheet_import.google_spreadsheet_form
+msgid ""
+"<code>records</code>: recordset of all records on which the action is "
+"triggered in multi mode; may be void"
+msgstr ""
+"<code>records</code>: conjunto de todos los registros en lo cuales la "
+"acción fue realizada en modo múltiple; puede estar vacía"
+
+#. module: google_spreadsheet_import
+#: model_terms:ir.ui.view,arch_db:google_spreadsheet_import.google_spreadsheet_form
+msgid ""
+"<code>time</code>, <code>datetime</code>, <code>dateutil</code>, "
+"<code>timezone</code>: useful Python libraries"
+msgstr ""
+"<code>time</code>, <code>datetime</code>, <code>dateutil</code>, "
+"<code>timezone</code>: Bibliotecas de Python útiles"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet__active
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_file__active
+msgid "Active"
+msgstr "Activo"
+
+#. module: google_spreadsheet_import
+#: model_terms:ir.ui.view,arch_db:google_spreadsheet_import.google_spreadsheet_form
+msgid "Advanced"
+msgstr "Avanzado"
+
+#. module: google_spreadsheet_import
+#: model_terms:ir.ui.view,arch_db:google_spreadsheet_import.google_spreadsheet_form
+msgid ""
+"Are you sure to set import in the background? The import will start "
+"automatically."
+msgstr ""
+"¿Estás seguro de configurar la importación en segundo plano? La importación "
+"comenzará automáticamente."
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet__background_import
+msgid "Background Import"
+msgstr "Importación de fondo"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet__batch_size
+msgid "Batch Size"
+msgstr "Tamaño del lote"
+
+#. module: google_spreadsheet_import
+#: model_terms:ir.ui.view,arch_db:google_spreadsheet_import.google_spreadsheet_form
+msgid "Clean Log"
+msgstr "Limpiar Errores"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet__context
+msgid "Context"
+msgstr "Contexto"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields.selection,name:google_spreadsheet_import.selection__google_spreadsheet_file__file_type__create
+msgid "Create Spreadsheet"
+msgstr "Crear hoja de cálculo"
+
+#. module: google_spreadsheet_import
+#: model_terms:ir.ui.view,arch_db:google_spreadsheet_import.google_spreadsheet_file_form
+msgid "Create/Update File"
+msgstr "Crear/Actualizar archivo"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet__create_uid
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_error__create_uid
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_file__create_uid
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_file_model__create_uid
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_file_sheet__create_uid
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_log__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet__create_date
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_error__create_date
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_file__create_date
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_file_model__create_date
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_file_sheet__create_date
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_log__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet__data
+#: model_terms:ir.ui.view,arch_db:google_spreadsheet_import.google_spreadsheet_form
+msgid "Data"
+msgstr "Datos"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet__date_format
+msgid "Date Format"
+msgstr "Formato de fecha"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet__datetime_format
+msgid "Datetime Format"
+msgstr "Formato de fecha y hora"
+
+#. module: google_spreadsheet_import
+#: model_terms:ir.ui.view,arch_db:google_spreadsheet_import.google_spreadsheet_form
+msgid "Deactivate Import in Background"
+msgstr "Desactivar importación en segundo plano"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,help:google_spreadsheet_import.field_google_spreadsheet__group_ids
+msgid ""
+"Define what groups will have access to import this sheet if this field is "
+"empty only the administrator will have the access to this sheet."
+msgstr ""
+"Defina qué grupos tendrán acceso para importar esta hoja si este campo está "
+"vacío, solo el administrador tendrá acceso a esta hoja."
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,help:google_spreadsheet_import.field_google_spreadsheet__user_ids
+msgid ""
+"Define what users that will have access to import this sheet if this field "
+"is empty only the administrator will have the access to this sheet."
+msgstr ""
+"Defina qué usuarios tendrán acceso para importar esta hoja si este campo "
+"está vacío, solo el administrador tendrá acceso a esta hoja."
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet__display_name
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_error__display_name
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_file__display_name
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_file_model__display_name
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_file_sheet__display_name
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_log__display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_log__duration
+msgid "Duration"
+msgstr "Duración"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet__encoding
+msgid "Encoding"
+msgstr "Codificación"
+
+#. module: google_spreadsheet_import
+#: model_terms:ir.ui.view,arch_db:google_spreadsheet_import.google_spreadsheet_form
+msgid ""
+"Enter Python code here. Help about Python expression is available in the "
+"help tab of this document."
+msgstr ""
+"Introduzca el código Python aquí. Tiene ayuda disponible sobre expresiones "
+"Python en la pestaña ayuda de este documento."
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields.selection,name:google_spreadsheet_import.selection__google_spreadsheet_error__type__error
+msgid "Error"
+msgstr "Error:"
+
+#. module: google_spreadsheet_import
+#: model_terms:ir.ui.view,arch_db:google_spreadsheet_import.google_spreadsheet_form
+msgid "Errors"
+msgstr "Errores"
+
+#. module: google_spreadsheet_import
+#: model:ir.model,name:google_spreadsheet_import.model_google_spreadsheet_error
+msgid "Errors of Google Drive Sheets"
+msgstr "Errores de Google Drive Sheets"
+
+#. module: google_spreadsheet_import
+#: model_terms:ir.ui.view,arch_db:google_spreadsheet_import.google_spreadsheet_form
+msgid "Example of Python code"
+msgstr "Ejemplo de código Python"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_error__field
+msgid "Field"
+msgstr "Campo"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_error__field_name
+msgid "Field Name"
+msgstr "Nombre del campo"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet__file_id
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_file_model__file_id
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_file_sheet__file_id
+#: model_terms:ir.ui.view,arch_db:google_spreadsheet_import.google_spreadsheet_search
+msgid "File"
+msgstr "Archivo"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_file__file_type
+msgid "File Type"
+msgstr "Tipo de archivo"
+
+#. module: google_spreadsheet_import
+#: model_terms:ir.ui.view,arch_db:google_spreadsheet_import.google_spreadsheet_form
+msgid "Filter options"
+msgstr "Opciones de filtro"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet__fix_header
+msgid "Fix Header"
+msgstr "Corregir Encabezado"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet__float_decimal_separator
+msgid "Float Decimal Separator"
+msgstr "Separador de decimales en flotantes"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet__float_thousand_separator
+msgid "Float Thousand Separator"
+msgstr "Separador de miles en flotantes"
+
+#. module: google_spreadsheet_import
+#: model_terms:ir.ui.view,arch_db:google_spreadsheet_import.google_spreadsheet_form
+msgid "Format options"
+msgstr "Opciones de formato"
+
+#. module: google_spreadsheet_import
+#: model_terms:ir.ui.view,arch_db:google_spreadsheet_import.google_spreadsheet_file_form
+msgid "Get File Info"
+msgstr "Obtener información del archivo"
+
+#. module: google_spreadsheet_import
+#: model:ir.ui.menu,name:google_spreadsheet_import.google_drive_child_menu
+#: model:ir.ui.menu,name:google_spreadsheet_import.google_drive_menu_root
+msgid "Google Drive"
+msgstr "Google Drive"
+
+#. module: google_spreadsheet_import
+#: model:ir.actions.act_window,name:google_spreadsheet_import.action_google_spreadsheet_file
+#: model:ir.ui.menu,name:google_spreadsheet_import.google_spreadsheet_file_menu
+msgid "Google Spreadsheet Files"
+msgstr "Archivos de hoja de cálculo de Google"
+
+#. module: google_spreadsheet_import
+#: model:ir.actions.act_window,name:google_spreadsheet_import.action_google_spreadsheet
+#: model:ir.ui.menu,name:google_spreadsheet_import.google_spreadsheet_menu
+msgid "Google Spreadsheet Import"
+msgstr "Importación de hoja de cálculo de Google"
+
+#. module: google_spreadsheet_import
+#: model:ir.actions.server,name:google_spreadsheet_import.ir_cron_google_spreadsheet_background_import_ir_actions_server
+#: model:ir.cron,cron_name:google_spreadsheet_import.ir_cron_google_spreadsheet_background_import
+#: model:ir.cron,name:google_spreadsheet_import.ir_cron_google_spreadsheet_background_import
+msgid "Google Spreadsheet Import: Background Import"
+msgstr ""
+"Importación de hoja de cálculo de Google: Importación en segundo plano"
+
+#. module: google_spreadsheet_import
+#: model:ir.module.category,name:google_spreadsheet_import.module_category_google_spreadsheet_import
+msgid "Google Spreadsheets Import"
+msgstr "Importación de hojas de cálculo de Google"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet__group_ids
+msgid "Groups"
+msgstr "Grupos"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet__header_value
+msgid "Header Value"
+msgstr "Valor de encabezado"
+
+#. module: google_spreadsheet_import
+#: model_terms:ir.ui.view,arch_db:google_spreadsheet_import.google_spreadsheet_form
+msgid "Help"
+msgstr "Ayuda"
+
+#. module: google_spreadsheet_import
+#: model_terms:ir.ui.view,arch_db:google_spreadsheet_import.google_spreadsheet_form
+msgid "Help with Python expressions"
+msgstr "Ayuda con las expresiones de Python"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet__id
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_error__id
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_file__id
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_file_model__id
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_file_sheet__id
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_log__id
+msgid "ID"
+msgstr "ID (Identificador)"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,help:google_spreadsheet_import.field_google_spreadsheet_file__id_file
+msgid ""
+"ID of the spreadsheet. If the URL of the spreadsheet is https://docs.google."
+"com/spreadsheets/d/1SBcVQu/edit#gid=123 the ID will be 1SBcVQu"
+msgstr ""
+"ID de la hoja de cálculo. Si la URL de la hoja de cálculo es https://docs."
+"google.com/spreadsheets/d/1SBcVQu/edit#gid=123, la ID será 1SBcVQu"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_log__ids_related
+msgid "Ids Related"
+msgstr "Identificaciones relacionadas"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields.selection,name:google_spreadsheet_import.selection__google_spreadsheet_file__file_type__import
+msgid "Import Spreadsheet"
+msgstr "Importar hoja de cálculo"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet__import_type
+msgid "Import Type"
+msgstr "Tipo de importación"
+
+#. module: google_spreadsheet_import
+#: model_terms:ir.ui.view,arch_db:google_spreadsheet_import.google_spreadsheet_form
+msgid "Import in Background"
+msgstr "Importar en segundo plano"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,help:google_spreadsheet_import.field_google_spreadsheet__fix_header
+msgid ""
+"In some cases the header of the document is not taken correctly. Check this "
+"field to fix the header."
+msgstr ""
+"En algunos casos no se toma correctamente el encabezado del documento. "
+"Marque este campo para corregir el encabezado."
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_file_sheet__sequence
+msgid "Index"
+msgstr "Índice"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet____last_update
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_error____last_update
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_file____last_update
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_file_model____last_update
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_file_sheet____last_update
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_log____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet__write_uid
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_error__write_uid
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_file__write_uid
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_file_model__write_uid
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_file_sheet__write_uid
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_log__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet__write_date
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_error__write_date
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_file__write_date
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_file_model__write_date
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_file_sheet__write_date
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_log__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet__error_ids
+msgid "List of errors"
+msgstr "Lista de errores"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet__log_ids
+msgid "List of logs"
+msgstr "Lista de registros"
+
+#. module: google_spreadsheet_import
+#: model:ir.model,name:google_spreadsheet_import.model_google_spreadsheet_log
+msgid "Log of Google Drive Sheets"
+msgstr "Registro de hojas de Google Drive"
+
+#. module: google_spreadsheet_import
+#: model_terms:ir.ui.view,arch_db:google_spreadsheet_import.google_spreadsheet_form
+msgid "Logs"
+msgstr "Registros"
+
+#. module: google_spreadsheet_import
+#: model:res.groups,name:google_spreadsheet_import.group_google_spreadsheet_import_manager
+msgid "Manager"
+msgstr "Responsable"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_error__message
+msgid "Message"
+msgstr "Mensaje"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet__model
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_file_model__model
+#: model_terms:ir.ui.view,arch_db:google_spreadsheet_import.google_spreadsheet_search
+msgid "Model"
+msgstr "Modelo"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_file__model_ids
+#: model_terms:ir.ui.view,arch_db:google_spreadsheet_import.google_spreadsheet_file_form
+msgid "Models"
+msgstr "Modelos"
+
+#. module: google_spreadsheet_import
+#: model:ir.model,name:google_spreadsheet_import.model_google_spreadsheet_file_model
+msgid "Models to create a template in Google Spreadsheets"
+msgstr "Modelos para crear una plantilla en Google Spreadsheets"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet__name
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_file__name
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_file_sheet__name
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_log__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields.selection,name:google_spreadsheet_import.selection__google_spreadsheet__import_type__native
+msgid "Native"
+msgstr "Nativo"
+
+#. module: google_spreadsheet_import
+#: model_terms:ir.ui.view,arch_db:google_spreadsheet_import.google_spreadsheet_form
+msgid "Native Importation"
+msgstr "Importación Nativa"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,help:google_spreadsheet_import.field_google_spreadsheet__import_type
+msgid ""
+"Native: Use the spreadsheet with odoo native importation.\n"
+"Code: Write python code to manipulate the data from the spreadsheet."
+msgstr ""
+"Nativo: use la hoja de cálculo con la importación nativa de odoo.\n"
+"Código: escribe código python para manipular los datos de la hoja de "
+"cálculo."
+
+#. module: google_spreadsheet_import
+#: model_terms:ir.ui.view,arch_db:google_spreadsheet_import.google_spreadsheet_file_form
+#: model_terms:ir.ui.view,arch_db:google_spreadsheet_import.google_spreadsheet_form
+msgid "Open File"
+msgstr "Abrir archivo"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet__code
+#: model:ir.model.fields.selection,name:google_spreadsheet_import.selection__google_spreadsheet__import_type__code
+#: model_terms:ir.ui.view,arch_db:google_spreadsheet_import.google_spreadsheet_form
+msgid "Python Code"
+msgstr "Código Python"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet__query
+msgid "Query"
+msgstr "Consulta"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet__quoting
+msgid "Quoting"
+msgstr "Comillas"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_error__record
+msgid "Record"
+msgstr "Registro"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet__model_id
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_file_model__model_id
+msgid "Relation model"
+msgstr "Modelo de relación"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_error__row_from
+msgid "Row From"
+msgstr "Fila desde"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_error__row_to
+msgid "Row To"
+msgstr "Fila a"
+
+#. module: google_spreadsheet_import
+#: model_terms:ir.ui.view,arch_db:google_spreadsheet_import.google_spreadsheet_form
+msgid "Security Groups"
+msgstr "Grupos de seguridad"
+
+#. module: google_spreadsheet_import
+#: model_terms:ir.ui.view,arch_db:google_spreadsheet_import.google_spreadsheet_form
+msgid "See Records"
+msgstr "Ver Registros"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet__separator
+msgid "Separator"
+msgstr "Separador"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet__sequence
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_file__sequence
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_file_model__sequence
+msgid "Sequence"
+msgstr "Secuencia"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet__sheet_id
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_error__sheet_id
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_log__sheet_id
+#: model_terms:ir.ui.view,arch_db:google_spreadsheet_import.google_spreadsheet_search
+msgid "Sheet"
+msgstr "Hoja"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_file_sheet__id_sheet
+msgid "Sheet ID"
+msgstr "ID de hoja"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet__sheet_range
+msgid "Sheet Range"
+msgstr "Rango de hoja"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,help:google_spreadsheet_import.field_google_spreadsheet__sheet_id
+msgid ""
+"Sheet to be used, if is not provided the first sheet of the file will be "
+"used"
+msgstr ""
+"Hoja a utilizar, si no se aporta se utilizará la primera hoja del archivo"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_file__sheet_ids
+#: model_terms:ir.ui.view,arch_db:google_spreadsheet_import.google_spreadsheet_file_form
+msgid "Sheets"
+msgstr "Hojas"
+
+#. module: google_spreadsheet_import
+#: model:ir.model,name:google_spreadsheet_import.model_google_spreadsheet_file_sheet
+msgid "Sheets of Spreadsheet File"
+msgstr "Hojas de archivo de hoja de cálculo"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_file__id_file
+msgid "Spreadsheet ID"
+msgstr "Identificación de la hoja de cálculo"
+
+#. module: google_spreadsheet_import
+#: model:ir.model,name:google_spreadsheet_import.model_google_spreadsheet_file
+msgid "Spreadsheet file to be imported"
+msgstr "Archivo de hoja de cálculo a importar"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet__store_data
+msgid "Store Data"
+msgstr "Datos Almacenados"
+
+#. module: google_spreadsheet_import
+#: model:ir.model,name:google_spreadsheet_import.model_google_spreadsheet
+msgid "Sync google drive sheet"
+msgstr "Sincronizar hoja de Google Drive"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,help:google_spreadsheet_import.field_google_spreadsheet__context
+msgid "Technical field used to pass context to importation process."
+msgstr ""
+"Campo técnico utilizado para pasar contexto al proceso de importación."
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,help:google_spreadsheet_import.field_google_spreadsheet_file__url
+msgid ""
+"Technical field used to save the URL of the file and allow to open the file "
+"from Odoo."
+msgstr ""
+"Campo técnico utilizado para guardar la URL del archivo y permitir abrir el "
+"archivo desde Odoo."
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,help:google_spreadsheet_import.field_google_spreadsheet_log__ids_related
+msgid ""
+"Technical field used to save the ids of the records that was updated/"
+"created by this sheet"
+msgstr ""
+"Campo técnico utilizado para guardar los identificadores de los registros "
+"que se actualizó/creó en esta hoja"
+
+#. module: google_spreadsheet_import
+#: code:addons/google_spreadsheet_import/models/google_spreadsheet_file.py:0
+#, python-format
+msgid "The Spreadsheet ID is not correct, please verify it."
+msgstr "El ID de la hoja de cálculo no es correcto, verifíquelo."
+
+#. module: google_spreadsheet_import
+#: code:addons/google_spreadsheet_import/models/google_spreadsheet_file.py:0
+#, python-format
+msgid "The URL provided is invalid."
+msgstr "La URL proporcionada no es válida."
+
+#. module: google_spreadsheet_import
+#: code:addons/google_spreadsheet_import/models/google_spreadsheet.py:0
+#, python-format
+msgid "The context must be formatted as python dictionary."
+msgstr "El contexto debe ser tener el formato de un diccionario de python."
+
+#. module: google_spreadsheet_import
+#: code:addons/google_spreadsheet_import/models/google_spreadsheet.py:0
+#, python-format
+msgid "There was an error, please contact the Administrator"
+msgstr "Hubo un error, por favor contacte al Administrador"
+
+#. module: google_spreadsheet_import
+#: model_terms:ir.ui.view,arch_db:google_spreadsheet_import.google_spreadsheet_form
+msgid "To return an action, assign: <code>action = {...}</code>"
+msgstr "Para devolver una acción, asigne: <code>action = {...}</code>"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_error__type
+msgid "Type"
+msgstr "Tipo"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_file__url
+msgid "URL"
+msgstr "URL"
+
+#. module: google_spreadsheet_import
+#: model_terms:ir.ui.view,arch_db:google_spreadsheet_import.google_spreadsheet_form
+msgid "Upload"
+msgstr "Subir"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,help:google_spreadsheet_import.field_google_spreadsheet__batch_size
+msgid ""
+"Used to define the size of the batch of records that will be imported at "
+"the same time, this helps to prevent CPU timeouts."
+msgstr ""
+"Usado para definir el tamaño del lote o número de registros que van a ser "
+"importados al mismo tiempo, esto ayuda para prevenir errores de CPU y "
+"tiempos sin respuesta."
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,help:google_spreadsheet_import.field_google_spreadsheet__query
+msgid ""
+"Used to get data from Google Spreadsheets using a Query:\n"
+"Example: select A, B, (D+E) where C < 100 and X = 'yes'\n"
+"For more information visit:\n"
+"https://developers.google.com/chart/interactive/docs/querylanguage"
+msgstr ""
+"Se utiliza para obtener datos de las hojas de cálculo de Google mediante "
+"una consulta:\n"
+"Ejemplo: select A, B, (D+E) where C < 100 y X = ‘yes’\n"
+"Para más información visite:\n"
+"https://developers.google.com/chart/interactive/docs/querylanguage"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,help:google_spreadsheet_import.field_google_spreadsheet__sheet_range
+msgid ""
+"Used to get only the information in the range provided.\n"
+"Example: A1:G"
+msgstr ""
+"Se utiliza para obtener solo la información en el rango proporcionado.\n"
+"Ejemplo: A1:G"
+
+#. module: google_spreadsheet_import
+#: model:res.groups,name:google_spreadsheet_import.group_google_spreadsheet_import_user
+msgid "User"
+msgstr "Usuario"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet__user_ids
+#: model_terms:ir.ui.view,arch_db:google_spreadsheet_import.google_spreadsheet_form
+msgid "Users"
+msgstr "Usuarios"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,field_description:google_spreadsheet_import.field_google_spreadsheet_error__value
+msgid "Value"
+msgstr "Valor"
+
+#. module: google_spreadsheet_import
+#: model_terms:ir.ui.view,arch_db:google_spreadsheet_import.google_spreadsheet_form
+msgid ""
+"Various fields may use Python code or Python expressions. The following "
+"variables can be used:"
+msgstr ""
+"Varios campos pueden usar código de Python o expresiones de Python. Se "
+"pueden utilizar las siguientes variables:"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields.selection,name:google_spreadsheet_import.selection__google_spreadsheet_error__type__warning
+msgid "Warning"
+msgstr "Advertencia"
+
+#. module: google_spreadsheet_import
+#: model:ir.model.fields,help:google_spreadsheet_import.field_google_spreadsheet__code
+msgid ""
+"Write Python code that the action will execute. Some variables are "
+"available for use; help about python expression is given in the help tab."
+msgstr ""
+"Escriba el código de Python que ejecutará la acción. Algunas variables "
+"están disponibles para su uso; la ayuda sobre la expresión de python se "
+"proporciona en la pestaña de ayuda."

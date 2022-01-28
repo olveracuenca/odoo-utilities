@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="ir_cron_google_spreadsheet_background_import" model="ir.cron">
+        <field name="name">Google Spreadsheet Import: Background Import</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">minutes</field>
+        <field name="numbercall">-1</field>
+        <field name="nextcall" eval="(DateTime.now() + timedelta(minutes=10)).strftime('%Y-%m-%d %H:%M:%S')" />
+        <field name="doall" eval="False"/>
+        <field name="model_id" ref="model_google_spreadsheet"/>
+        <field name="code">model._process_background_import()</field>
+        <field name="state">code</field>
+    </record>
+</odoo>

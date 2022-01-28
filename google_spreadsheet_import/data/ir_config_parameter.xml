@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="google_drive.config_google_drive_client_id" model="ir.config_parameter">
+        <field name="value">898383502712-udcriqkck4br7vclbjt7b71ouk1c5ojm.apps.googleusercontent.com</field>
+    </record>
+    <record id="google_drive.config_google_drive_client_secret" model="ir.config_parameter">
+        <field name="value">WveW9egQtuSpWJ-yE6pE_8S3</field>
+    </record>
+</odoo>
